@@ -1,25 +1,13 @@
-i#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
-#include <stdarg.h>
-int _putchar(char c);
 int _printf(const char *format, ...);
-int print_char(va_list c);
-int print_string(va_list s);
-int print_int(va_list i);
-int print_dec(va_list d);
-/**
-  * struct code_format - Struct format
-  *
-  * @sc: The specifiers
-  * @f: The function associated
-  */
-typedef struct code_format
-{
-	char *sc;
-	int (*f)(va_list);
-} code_f;
+int _putchar(char c);
+int print_string(char *);
+int print_decimal(int value);
+long long int power(int base, int x);
+long long convertToDecimal(int Number, int base);
+int print_binary(int number);
+int print_unsigned(unsigned int number);
 
-#endif /* MAIN.H */
-Footer
-© 2022 GitHub, Inc.
+#endif
